@@ -1,0 +1,5 @@
+((*- extends 'article.tplx' -*))
+
+%%%%%%%%%% Remove Input Blocks %%%%%%%%%%
+((* block input_group *))
+((* endblock input_group *))
