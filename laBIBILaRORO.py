@@ -272,7 +272,7 @@ def regress_covar_func(theSulcusList,theCovList,theDFsulcus,theDFvar,display=Fal
             plt.xlabel(covar)
             plt.ylabel(theSulcusList[0])
 
-def grp_comp_surface_func(groupUsed,listeCovar,ssdf_covar,ssdf_CT,STUDY_PATH,threshold_p=0.001,threshold_size=50,MyPalette=plt.get_cmap("Pastel1")):
+def grp_comp_surface_func(groupUsed,listeCovar,ssdf_covar,ssdf_CT,STUDY_PATH,threshold_p=0.01,threshold_size=50,MyPalette=plt.get_cmap("Pastel1")):
         GP1=ssdf_covar[groupUsed].unique()[0]
         GP2=ssdf_covar[groupUsed].unique()[1]
    
@@ -314,8 +314,6 @@ def grp_comp_surface_func(groupUsed,listeCovar,ssdf_covar,ssdf_CT,STUDY_PATH,thr
         cp = [np.copy(slm_group.P["pval"]["C"])]
         [np.place(x, np.logical_or(x > 0.05, ~mask), np.nan) for x in cp]
         
-        threshold_p=0.01
-        threshold_size=50
         for contrast in [0,1]:           
             filtered_df = slm_group.P['clus'][contrast][(slm_group.P['clus'][contrast]['nverts'] > threshold_size) & (slm_group.P['clus'][contrast]['P'] < threshold_p)]
             if len(filtered_df)>0 :
