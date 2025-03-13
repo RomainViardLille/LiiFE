@@ -362,6 +362,32 @@ def grp_comp_surface_func(groupUsed,listeCovar,ssdf_covar,ssdf_CT,STUDY_PATH,thr
                     pvalue=ttest_results["p-val"].values[0]
                     print(f"T-Test (oneside) : {tvalue:.3f} and p_value = {pvalue:.3f}")
 
+def grps_comp_surface_func(groupUsed,listeCovar,ssdf_covar,ssdf_CT,STUDY_PATH,threshold_p=0.01,threshold_size=50,MyPalette=plt.get_cmap("Pastel1")):
+        #GP1=ssdf_covar[groupUsed].unique()[0]
+        #GP2=ssdf_covar[groupUsed].unique()[1]
+   
+        #contrast_group = (ssdf_covar[groupUsed] == GP1).astype(int) - (ssdf_covar[groupUsed] == GP2).astype(int)
+        #term_group = FixedEffect(ssdf_covar[groupUsed])
+
+        ##model_group = term_group
+        #model_group_age_educ=term_group
+        
+        #for varc in listeCovar:
+        #    model_group_age_educ = model_group_age_educ + FixedEffect(ssdf_covar[varc])
+
+
+        #slm_group = SLM(
+        #    model_group_age_educ,
+        #    contrast_group,
+        #    surf=pial_combined,
+        #    mask=mask,
+        #    correction=["fdr", "rft"],
+        #    two_tailed=True,
+        #    cluster_threshold=0.01,
+        #)
+        #print(f"fitting the model")
+        #slm_group.fit(ssdf_CT.values)
+
 
 def corr_surface_var_func(listeDesVariabesATester,listeCovar,theDF1,theDF2,STUDY_PATH,threshold_p=0.001,threshold_size=50,MyPalette=plt.get_cmap("Pastel1")):
     pd.option_context('mode.use_inf_as_na', True)
