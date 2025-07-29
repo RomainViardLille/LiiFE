@@ -223,7 +223,7 @@ def filter_group(group_df,variable,nb_std=3):
     std = group_df[variable].std()
     return group_df[(group_df[variable] >= mean - nb_std * std) & (group_df[variable] <= mean + nb_std * std)]
     
-def remove_outliers_bygroup(df, variable, group, nb_std=3):
+def remove_outliers_bygroup(df, variable, group, nb_std=3,verbose=False):
     """
     Supprime les lignes du DataFrame df qui dépassent de plus ou moins trois écarts-types
     de la moyenne de la variable spécifiée par sous-groupes.
@@ -237,23 +237,45 @@ def remove_outliers_bygroup(df, variable, group, nb_std=3):
     Returns:
     pd.DataFrame: Le DataFrame sans les outliers.
     """
+    if verbose:
+        print(f"Removing outliers for variable '{variable}' by group '{group}' with {nb_std} standard deviations.")
+        print(f"Initial number of rows: {len(df)}")
+        print(df.groupby(group)[variable].agg(['mean', 'std']))
+    df = df.groupby(group).apply(lambda x: filter_group(x, variable, nb_std)).reset_index(drop=True)
+    if verbose:
+        print(f"Final number of rows: {len(df)}")
+        print(df.groupby(group)[variable].agg(['mean', 'std']))
 
-    return df.groupby(group).apply(lambda x: filter_group(x, variable, nb_std)).reset_index(drop=True)
+    return df
 
-def test_covar_funcOnTwoGroups(theCovList,theDF,ong,group1,group2):
+def test_covar_funcOnTwoGroups(theCovList,theDF,ong,group1,group2,p_thres=0):
+    theDF = theDF.replace([np.inf, -np.inf], np.nan)
     #regression des covariables
     for covar in theCovList :
         g1=theDF[theDF[ong] == group1][covar]
         g2=theDF[theDF[ong] == group2][covar]    
         t_statistic, p_value = stats.ttest_ind(g1,g2)
         print(f"T-test for {covar} : p-value={np.round(p_value,5)}")
+        if p_value < p_thres:
+            plt.figure()
+            sns.boxplot(x=ong, y=covar, data=theDF, palette="Set2")
+            sns.stripplot(x=ong, y=covar, data=theDF, color=".3", jitter=True)
+            plt.title(f"{covar} - {group1} vs {group2} (p={np.round(p_value,5)})")
+            plt.show()
 
-def test_covar_funcWithANOVA(theCovList,theDF,ong):
+
+def test_covar_funcWithANOVA(theCovList,theDF,ong,p_thres=0):
     for covar in theCovList :
         print(f"\033[1;32m {covar} \033[0m")
-        table = theDF.groupby(ong).agg({covar: ['size','mean', np.min, np.max, np.std]}) 
+        table = theDF.groupby(ong).agg({covar: ['size','mean',"min", "max", "std"]}) 
         aov = pg.anova(data=theDF, dv=covar, between=ong, detailed=True)
         print(f"{table.round(1)} \n ANOVA for {covar} : {np.round(aov[:]['p-unc'].values[0],5)}")    
+        if aov[:]['p-unc'].values[0] < p_thres:
+            plt.figure()
+            sns.boxplot(x=ong, y=covar, data=theDF, palette="Set2")
+            sns.stripplot(x=ong, y=covar, data=theDF, color=".3", jitter=True)
+            plt.title(f"{covar} (p={np.round(aov[:]['p-unc'].values[0],5)})")
+            plt.show()
         # FDR-corrected post hocs with Hedges'g effect size
         #posthoc = pg.pairwise_tests(data=df, dv=covar, within='group',parametric=True, padjust='fdr_bh', effsize='hedges')
         #pg.print_table(posthoc, floatfmt='.3f')
@@ -448,8 +470,7 @@ def corr_surface_var_func(listeDesVariabesATester,listeCovar,theDF1,theDF2,STUDY
                         
                         print(f"Coefficient de corrélation (Pearson) : {correlation_coefficient:.3f} and p_value = {p_val:.3f}")
                         print(f"Coefficient de détermination aka Explained variance (R²) : {r_squared:.3f}")
-    
-    
+       
 def corr_sillons_var_func(listeDesSillons,listeDesVariabes,theDF1,theDF2,thres_sign=0.05,corr_thres=0.4):
     #df_sill=theDF1[theDF1.index.isin(etude1_index)][listeDesSillons]
     df_sill=theDF1.loc[:][listeDesSillons]
