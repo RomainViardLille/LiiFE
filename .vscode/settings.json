@@ -2,3 +2,13 @@
     "editor.tabMovesFocus": false,
     "editor.tabCompletion": "on"
 }
+{
+  "shellcheck.ignorePattern": {
+    "SC2329": true
+  }
+}
+{
+    "python.analysis.extraPaths": [
+        "/home/romain/SVN/python/romain"
+    ]
+}
