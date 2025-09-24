@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 app.secret_key = "secret"  # Nécessaire pour utiliser session
 
-df = pd.read_excel("/NAS/tupac/romain/NextCloud_UNIV/AmeliorationContinue_PTD_perso/SuiviProjets.xlsx")
+df = pd.read_excel("/NAS/tupac/romain/NextCloud_PLBS/LIIFE/01_AMELIORATION_CONTINUE_LIIFE/BaseDocu_PTD/FOR/SA_LIIFE_FOR_PTD_001_FicheProjet.xlsx")
 colonnes = df.columns.tolist()
 
 @app.route("/", methods=["GET", "POST"])
