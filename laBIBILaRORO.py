@@ -288,6 +288,7 @@ def regress_covar_func(theSulcusList,theCovList,theDFsulcus,theDFvar,display=Fal
             plt.figure()
             plt.plot(theDFvar[covar], theDFsulcus[theSulcusList[0]], "bo", label="Données brutes") # les coordonnées (x, y) representés par des points
         theSulcusList=theDFsulcus[theSulcusList].dropna(axis=1).columns          
+        theDFsulcus = theDFsulcus.copy()  # Ajouté pour éviter le warning
         theDFsulcus.loc[:,theSulcusList] = theDFsulcus[theSulcusList].apply(lambda x: unconfound(x, theDFvar[covar].values.reshape(-1,1), False))
         if display:
             plt.plot(theDFvar[covar], theDFsulcus[theSulcusList[0]], "g.", label="Données corr") # les coordonnées (x, y) representés par des points        
@@ -370,8 +371,10 @@ def grp_comp_surface_func(groupUsed,listeCovar,ssdf_covar,ssdf_CT,STUDY_PATH,thr
                     # Supprimer les groupes non présents dans df_copy de la copie du dictionnaire palette
                     palette_copy = {group: color for group, color in palette_copy.items() if group in groups_present}
 
-                    sns.stripplot(df_copy,y=name,x=groupUsed,size=3,color="black", order=palette_copy.keys())
-                    sns.violinplot(df_copy,y=name,x=groupUsed, palette=palette_copy,order=palette_copy.keys())
+                    # sns.stripplot(df_copy,y=name,x=groupUsed,size=3,color="black", order=palette_copy.keys())
+                    # sns.violinplot(df_copy,y=name,x=groupUsed, palette=palette_copy,order=palette_copy.keys())
+                    sns.stripplot(df_copy, y=name, x=groupUsed, hue=groupUsed,legend=False, size=3, color="black")
+                    sns.violinplot(df_copy, y=name, x=groupUsed, hue=groupUsed, palette=palette_copy, order=palette_copy.keys(), legend=False)
                     figure_title=os.path.join(STUDY_PATH,f"groups_compare_{name}_contrast{contrast}.png")
                     print(figure_title)
                     plt.savefig(figure_title)
