@@ -1,0 +1,252 @@
+ {
+"description": "hypothalamus",
+"labels": {
+ "0":"background",
+ "1":"L-Fornix",
+ "2":"R-Fornix",
+ "3":"Optic-Tract",
+ "4":"Ant-Commisure",
+ "5":"L-Mam-nuc",
+ "6":"R-Mam-nuc",
+ "7":"L-Post-Hypotha",
+ "8":"R-Post-Hypotha",
+ "9":"L-Lateral-Hyp-Post",
+ "10":"R-Lateral-Hyp-Post",
+ "11":"L-Arcuate-nuc",
+ "12":"R-Arcuate-nuc",
+ "13":"Med-eminence",
+ "14":"L-Ventromed-Hyp-nuc",
+ "15":"R-Ventromed-Hyp-nuc",
+ "16":"L-Dorsomed-Hyp-nuc",
+ "17":"R-Dorsomed-Hyp-nuc",
+ "18":"L-Lat-Hypotal-tub",
+ "19":"R-Lat-Hypotal-tub",
+ "20":"L-Supra-Optic-Nuc",
+ "21":"R-Supra-Optic-Nuc",
+ "22":"L-ParaPerivent-Nuc",
+ "23":"R-ParaPerivent-Nuc",
+ "24":"L-Lat-Hypotal-Ant",
+ "25":"R-Lat-Hypotal-Ant",
+ "26":"L-Med-Preoptic-Nuc",
+ "27":"R-Med-Preoptic-Nuc"
+},
+"licence": "rv",
+"modality": {
+    "0": "MR"
+},
+"name": "hyposeg",
+"numTest": 20,
+"numTraining": 80,
+"reference": "LiiFE",
+"release": "1.0 27/11/2025",
+"tensorImageSize": "3D",
+"test": [
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170126135807_7T021103_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170213124759_7T021109_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170220103744_7T021110_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170220122820_7T021111_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170316125959_7T021105_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170330130258_7T021106_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170403131059_7T021107_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170410130608_7T021104_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170503112827_7T021137_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170508131439_7T021167_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170510080806_7T021118_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170608134358_7T021170_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170615101535_7T021177_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170615101535_7T021177_602_VWIP_T13DTFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170615135413_7T021128_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171018093239_7T021155_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171023125606_7T021166_801_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171107124315_7T021117_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171108125133_7T021144_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171127130719_7T021168_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171130080936_7T021169_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171204105349_7T021115_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171206105837_7T021116_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171211121212_7T021114_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171212124852_7T021172_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171213121601_7T021171_1901_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20171218105601_7T021174_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180116115118_7T021130_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180117120420_7T021136_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180122120100_7T021135_801_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180123124139_7T021131_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180124132632_7T021190_1401_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180129120054_7T021133_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180206104912_7T021134_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180206125054_7T021113_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180220133731_7T021132_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180312110830_7T021119_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180312132510_7T021120_801_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180313124253_7T021126_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180319104601_7T021125_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180328120332_7T021121_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180410121747_7T021187_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180417141003_7T021123_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180502121811_7T021124_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180503122340_7T021127_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180511082051_7T021122_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180514123827_7T021145_801_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180514123827_7T021145_802_VWIP_T13DTFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180516125421_7T021146_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180516142506_7T021153_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180523100617_7T021152_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180604130126_7T021148_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180604142305_7T021147_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180611095453_7T021150_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180627121955_7T021151_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180704121115_7T021154_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180709122417_7T021149_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180807104900_7T021156_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180822110645_7T021157_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180822134446_7T021164_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180905115227_7T021163_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180912121457_7T021159_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20180926105722_7T021158_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20181003122113_7T021161_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20181003143050_7T021162_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20181010103350_7T021165_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20181107084744_7T021160_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20181112080918_7T021178_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20181112095232_7T021185_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20181120124352_7T021184_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20181204095123_7T021180_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20181217075135_7T021179_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190107094844_7T021182_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190107124239_7T021183_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190121134937_7T021186_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190128131404_7T021181_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190130133123_7T021138_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190204105651_7T021139_801_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190211123438_7T021143_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190318131648_7T021142_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190401133714_7T021141_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20190404123722_7T021140_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz"
+],
+"training": [
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021104/anat/native_t1_20170410130608_7T021104_601_WIP_T1_3D_TFE_0-7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021104/segmentation/normalized_7T021104_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021114/anat/native_t1_20171211121212_7T021114_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021114/segmentation/normalized_7T021114_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021116/anat/native_t1_20171206105837_7T021116_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021116/segmentation/normalized_7T021116_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021119/anat/native_t1_20180312110830_7T021119_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021119/segmentation/normalized_7T021119_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021120/anat/native_t1_20180312132510_7T021120_801_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021120/segmentation/normalized_7T021120_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021124/anat/native_t1_20180502121811_7T021124_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021124/segmentation/normalized_7T021124_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021125/anat/native_t1_20180319104601_7T021125_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021125/segmentation/normalized_7T021125_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021127/anat/native_t1_20180503122340_7T021127_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021127/segmentation/normalized_7T021127_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021129/anat/native_t1_20180115120037_7T021129_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021129/segmentation/normalized_7T021129_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021130/anat/native_t1_20180116115118_7T021130_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021130/segmentation/normalized_7T021130_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021131/anat/native_t1_20180123124139_7T021131_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021131/segmentation/normalized_7T021131_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021134/anat/native_t1_20180206104912_7T021134_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021134/segmentation/normalized_7T021134_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021136/anat/native_t1_20180117120420_7T021136_701_WIP_T1_3D_TFE_0.7sag_SENSE-reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021136/segmentation/normalized_7T021136_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021138/anat/native_t1_20190130133123_7T021138_601_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021138/segmentation/normalized_7T021138_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021140/anat/native_t1_20190404123722_7T021140_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021140/segmentation/normalized_7T021140_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021145/anat/native_t1_20180514123827_7T021145_801_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021145/segmentation/normalized_7T021145_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021148/anat/native_t1_20180604130126_7T021148_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021148/segmentation/normalized_7T021148_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021153/anat/native_t1_20180516142506_7T021153_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021153/segmentation/normalized_7T021153_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021154/anat/native_t1_20180704121115_7T021154_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021154/segmentation/normalized_7T021154_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021155/anat/native_t1_20171018093239_7T021155_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021155/segmentation/normalized_7T021155_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021156/anat/native_t1_20180807104900_7T021156_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021156/segmentation/normalized_7T021156_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021158/anat/native_t1_20180926105722_7T021158_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021158/segmentation/normalized_7T021158_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/anat/native_t1_20180912121457_7T021159_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/segmentation/normalized_7T021159_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021161/anat/native_t1_20181003122113_7T021161_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021161/segmentation/normalized_7T021161_louna.nii.gz"
+    }
+],
+"validation": [
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021163/anat/native_t1_20180905115227_7T021163_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021163/segmentation/normalized_7T021163_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021170/anat/native_t1_20170608134358_7T021170_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021170/segmentation/normalized_7T021170_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021172/anat/native_t1_20171212124852_7T021172_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021172/segmentation/normalized_7T021172_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021173/anat/native_t1_20180110120125_7T021173_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021173/segmentation/normalized_7T021173_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021176/anat/native_t1_20180109120124_7T021176_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021176/segmentation/normalized_7T021176_louna.nii.gz"
+    },
+    {
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021178/anat/native_t1_20181112080918_7T021178_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021178/segmentation/normalized_7T021178_louna.nii.gz"
+    }
+]
+
+} 
