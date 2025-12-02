@@ -1,0 +1,68 @@
+ {
+"description": "hypothalamus",
+"labels": {
+ "0":"background",
+ "1":"L-Fornix",
+ "2":"R-Fornix",
+ "3":"Optic-Tract",
+ "4":"Ant-Commisure",
+ "5":"L-Mam-nuc",
+ "6":"R-Mam-nuc",
+ "7":"L-Post-Hypotha",
+ "8":"R-Post-Hypotha",
+ "9":"L-Lateral-Hyp-Post",
+ "10":"R-Lateral-Hyp-Post",
+ "11":"L-Arcuate-nuc",
+ "12":"R-Arcuate-nuc",
+ "13":"Med-eminence",
+ "14":"L-Ventromed-Hyp-nuc",
+ "15":"R-Ventromed-Hyp-nuc",
+ "16":"L-Dorsomed-Hyp-nuc",
+ "17":"R-Dorsomed-Hyp-nuc",
+ "18":"L-Lat-Hypotal-tub",
+ "19":"R-Lat-Hypotal-tub",
+ "20":"L-Supra-Optic-Nuc",
+ "21":"R-Supra-Optic-Nuc",
+ "22":"L-ParaPerivent-Nuc",
+ "23":"R-ParaPerivent-Nuc",
+ "24":"L-Lat-Hypotal-Ant",
+ "25":"R-Lat-Hypotal-Ant",
+ "26":"L-Med-Preoptic-Nuc",
+ "27":"R-Med-Preoptic-Nuc"
+},
+"licence": "rv",
+"modality": {
+    "0": "MR"
+},
+"name": "hyposeg",
+"numTest": 20,
+"numTraining": 80,
+"reference": "LiiFE",
+"release": "1.0 27/11/2025",
+"tensorImageSize": "3D",
+"test": [
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170126135807_7T021103_701_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+    "/NAS/deathrow/protocoles/HYPOTALAMUS/deepHypoSeg/images_raw_T1/20170213124759_7T021109_601_WIP_T1_3D_TFE_0.7sag_SENSE.nii.gz",
+],
+"training": [
+    {
+        "image": "/NA/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/anat/native_t1_20180912121457_7T021159_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NA/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/segmentation/7T021159_louna.nii.gz"
+    },
+    {
+        "image": "/NA/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021161/anat/native_t1_20181003122113_7T021161_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NA/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021161/segmentation/7T021161_louna.nii.gz"
+    }
+],
+"validation": [
+    {
+        "image": "/NA/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021176/anat/native_t1_20180109120124_7T021176_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NA/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021176/segmentation/7T021176_louna.nii.gz"
+    },
+    {
+        "image": "/NA/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021178/anat/native_t1_20181112080918_7T021178_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NA/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021178/segmentation/7T021178_louna.nii.gz"
+    }
+]
+
+} 
