@@ -127,13 +127,15 @@
 "training": [
     {
         "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/anat/native_t1_20180912121457_7T021159_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
-        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/segmentation/7T021159_louna.nii.gz"
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/segmentation/7T021159_RV_1_2_uthr.nii.gz",
+        "labelMULTIROI": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/segmentation/7T021159_louna.nii.gz"
     }
 ],
 "validation": [
     {
-        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021178/anat/native_t1_20181112080918_7T021178_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
-        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021178/segmentation/7T021178_louna.nii.gz"
+        "image": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/anat/native_t1_20180912121457_7T021159_701_WIP_T1_3D_TFE_0.7sag_SENSE_reoriented.nii",
+        "label": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/segmentation/7T021159_RV_1_2_uthr.nii.gz",
+        "labelMULTIROI": "/NAS/deathrow/protocoles/HYPOTALAMUS/Cecile/2025_TempData/7T021159/segmentation/7T021159_louna.nii.gz"
     }
 ]
 
